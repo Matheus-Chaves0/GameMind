@@ -42,4 +42,4 @@ Este projeto é de uso educacional e livre para modificações.
     - CSS
     - JavaScript
 ---
-Link do github pages:
+Link do github pages: [Acesse aqui]( https://matheus-chaves0.github.io/GameMind/)
