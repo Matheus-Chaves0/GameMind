@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameMind AI - Assistente para Jogos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="  https://unpkg.com/showdown/dist/showdown.min.js"></script>
+    <script src="scripts.js" defer></script>
+    <script src="scripts2.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img id="logo" src="IMG/Img_GM.png" alt="Logotipo">
+         <h1 id="tituloPag">GameMind AI</h1>
+    </header>
+    <main class="container">
+        <section>
+            <h2>Assistende de IA</h2>
+            <p>Faça perguntas para melhorar seu desempenho em jogos!</p>
+            <form id="form">
+                <input type="password" placeholder="Informe a API Key do Gemini" id="apiKey" required>
+                <select id="select" required>
+                    <option value="">Selecione um Jogo:</option>
+                    <option value="Valorant">Valorant</option>
+                    <option value="Rocket">Rocket League</option>
+                    <option value="CS">Counter Strike 2</option>
+                    <option value="Warzone">COD Warzone</option>
+                </select>
+                <input type="text" placeholder="EX: O que mudou na atualização atual" id="pergunta" required>
+                <button id="send">Perguntar</button>
+            </form>
+            <div id="resposta" class="hidden">
+                <div class="responce-content">
+
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
