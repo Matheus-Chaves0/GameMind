@@ -11,6 +11,7 @@ Basta informar sua **API Key**, escolher o jogo e digitar a pergunta.
 
 ## 🚀 Como Usar
 
+
 1. **Abra o arquivo `index.html`** em um navegador moderno (Chrome, Firefox, Edge).
 2. **Informe sua API Key** no campo correspondente.
 3. **Selecione o jogo** na lista.
