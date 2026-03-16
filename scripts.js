@@ -20,14 +20,14 @@ const perguntarIA = async (pergunta, jogo, apiKey) => {
     const model = "gemini-2.0-flash";
     const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
     
-    const prompt = `Você é um especialista no jogo ${jogo}. Responda de forma concisa (máx. 500 caracteres) em markdown:
+    const prompt = `Você é um especialista no jogo ${jogo}. Responda o que foi pedido pelo usuario de forma concisa (máx. 500 caracteres) em markdown ou em pt-br, sem explicações adicionais. Se a resposta for muito longa, resuma-a. Seja direto ao ponto e evite rodeios.:
     
     **Pergunta:** ${pergunta}
     
     **Regras:**
     - Data atual: ${new Date().toLocaleDateString()}
-    - Se não souber, responda "Não sei"
-    - Se for off-topic, responda "Pergunta não relacionada ao jogo"
+    - Se não souber, responda "Não estou informano no assunto ou não tenho acesso a essa informação "
+    - Se for off-topic, responda "Pergunta não relacionada ao jogo selecionado"
     - Seja objetivo e use markdown para formatação`;
 
     try {
