@@ -24,4 +24,3 @@ document.addEventListener('DOMContentLoaded', function() {
     // Inicia a animação
     typeWriter(titulo, textoCompleto, 100);
 });
-//AIzaSyAI5itLQEh58PFThNHNpmn3TKmEZYyj5kk
